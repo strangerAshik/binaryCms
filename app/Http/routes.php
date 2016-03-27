@@ -82,14 +82,5 @@ Route::group(['prefix' => 'admin','middleware' => 'web'], function () {
 Route::group(['middleware' => ['web']], function () 
 {
 Route::get('/','frontController@home');
-Route::get('contact','frontController@contact');
-Route::get('services','frontController@services');
-Route::get('products','frontController@products');
-Route::get('about','frontController@aboutUs');
-Route::get('career','frontController@career');
-
-Route::get('galleryAll','frontController@galleryAll');
-Route::get('singleGallery/{id}','frontController@singleGallery');
-
 Route::post('sendEmail','frontController@sendEmail');
 });
